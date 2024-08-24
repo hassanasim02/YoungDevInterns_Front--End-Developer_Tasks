@@ -17,12 +17,44 @@
             background: black;
             color: #ffffff;
             padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .header-info {
             text-align: center;
+        }
+
+        .header-info h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        .header-info p {
+            font-size: 1.2em;
+            margin: 5px 0 15px;
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 15px 0 0;
         }
 
         nav ul li {
@@ -90,6 +122,12 @@
         @media (max-width: 768px) {
             header {
                 padding: 15px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin: 0 0 15px 0;
             }
 
             nav ul li {
@@ -147,15 +185,20 @@
 
 <body>
     <header>
-        <h1>Muhammad Hassan Asim</h1>
-        <p>Web Developer | Designer | Lifelong Learner</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="profile-image">
+            <img src="https://media.licdn.com/dms/image/D4D03AQGlE-a1JBNPvg/profile-displayphoto-shrink_200_200/0/1706114402216?e=2147483647&v=beta&t=1u1wOkrXIHLMqFBDpyCHMudsWj0OCm81_tnYM3ou8YA" alt="Muhammad Hassan Asim">
+        </div>
+        <div class="header-info">
+            <h1>Muhammad Hassan Asim</h1>
+            <p>Web Developer | Designer | Lifelong Learner</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
