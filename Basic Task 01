@@ -9,35 +9,43 @@
 
 <body>
     <header>
-        <h1>Muhammad Hassan Asim</h1>
-        <p>Web Developer | Designer | Lifelong Learner</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="profile-image">
+            <img src="https://media.licdn.com/dms/image/D4D03AQGlE-a1JBNPvg/profile-displayphoto-shrink_200_200/0/1706114402216?e=2147483647&v=beta&t=1u1wOkrXIHLMqFBDpyCHMudsWj0OCm81_tnYM3ou8YA" alt="Muhammad Hassan Asim">
+        </div>
+        <div class="header-info">
+            <h1>Muhammad Hassan Asim</h1>
+            <p>Web Developer | Designer | Lifelong Learner</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Welcome to my portfolio! I am a passionate web developer with experience in creating dynamic and
-                responsive websites. I love coding, learning new technologies, and solving problems through design.</p>
+            <p>Welcome to my portfolio! I am a passionate web developer with experience in creating dynamic and responsive websites. I love coding, learning new technologies, and solving problems through design.</p>
         </section>
 
         <section id="projects">
             <h2>My Projects</h2>
-            <div>
-                <div>
+            <div class="project-container">
+                <div class="project">
                     <h3>Project 1</h3>
-                    <img src="C:\Users\hassa\OneDrive\Desktop\project01.jpg" alt="Project 1">
+                    <div class="project-images">
+                        <img src="C:\Users\hassa\OneDrive\Desktop\project01.jpg" alt="Project 1">
+                    </div>
                     <p>A floral website integrated with a Firebase system, fully responsive.</p>
                 </div>
-                <div>
+                <div class="project">
                     <h3>Project 2</h3>
-                    <img src="C:\Users\hassa\OneDrive\Desktop\project02.jpg" alt="Project 2">
+                    <div class="project-images">
+                        <img src="C:\Users\hassa\OneDrive\Desktop\project02.jpg" alt="Project 2">
+                    </div>
                     <p>A clone of the original Apple Store website with my modifications, built using Bootstrap 5.</p>
                 </div>
             </div>
@@ -47,8 +55,7 @@
             <h2>Contact Me</h2>
             <p>If you would like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
             <p>Email: <a href="mailto:hassan.asim02@outlook.com">hassan.asim02@outlook.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">Muhammad Hassan Asim</a>
-            </p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">Muhammad Hassan Asim</a></p>
         </section>
     </main>
 
